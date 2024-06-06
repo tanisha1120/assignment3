@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 int main(){
-    long long float base, exponent, result = 1;
+    long float base, exponent, result = 1;
 
     printf("Enter the base: ");
-    scanf("%d", &base);
+    scanf("%lf", &base);
 
     printf("Enter the exponent: ");
-    scanf("%d", &exponent);
+    scanf("%lf", &exponent);
     int i;
     for ( i = 1; i <= exponent; i++){
         result *= base;
     }
 
-    printf("%d raised to the power of %d is: %d\n", base, exponent, result);
+    printf("%lf raised to the power of %lf is: %lf\n", base, exponent, result);
 
     return 0;
 }
